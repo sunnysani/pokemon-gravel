@@ -1,0 +1,34 @@
+.cardContainer {
+  margin: 1.2rem 0;
+}
+
+.textName {
+  text-transform: capitalize;
+  margin-left: 1rem;
+}
+
+.cardInside {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 96px;
+
+  cursor: pointer;
+  transition: 0.2s ease-in-out;
+}
+
+.cardInside:hover {
+  scale: 1.2;
+}
+
+@media screen and (max-width: 740px) {
+  .textName {
+    font-size: x-large;
+  }
+}
+
+@media screen and (max-width: 580px) {
+  .textName {
+    font-size: large;
+  }
+}
