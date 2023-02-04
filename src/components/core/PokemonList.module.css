@@ -1,16 +1,17 @@
 .listContainer {
   text-align: center;
-  margin: 0 5rem;
+  padding: 0 5rem;
+  position: relative;
 }
 
 @media screen and (max-width: 740px) {
   .listContainer {
-    margin: 0 3rem;
+    padding: 0 3rem;
   }
 }
 
 @media screen and (max-width: 580px) {
   .listContainer {
-    margin: 0 1rem;
+    padding: 0 1rem;
   }
 }

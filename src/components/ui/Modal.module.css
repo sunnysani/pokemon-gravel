@@ -3,7 +3,8 @@
   top: 0;
   position: absolute;
   width: 100%;
-  height: max-content;
+  display: table;
+  height: 100%;
   background-color: rgba(0, 0, 0, 0.2);
   z-index: 9998;
   margin: auto;
