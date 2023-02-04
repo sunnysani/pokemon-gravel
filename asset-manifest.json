@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/pokemon-gravel/static/css/main.cde41e0c.css",
+    "main.js": "/pokemon-gravel/static/js/main.e1e304b8.js",
+    "index.html": "/pokemon-gravel/index.html",
+    "main.cde41e0c.css.map": "/pokemon-gravel/static/css/main.cde41e0c.css.map",
+    "main.e1e304b8.js.map": "/pokemon-gravel/static/js/main.e1e304b8.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.cde41e0c.css",
+    "static/js/main.e1e304b8.js"
+  ]
+}
