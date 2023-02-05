@@ -1,3 +1,8 @@
+.container {
+  height: 80vh;
+  overflow: scroll;
+}
+
 .pokemonName {
   margin: 0 0 0 0;
 }
