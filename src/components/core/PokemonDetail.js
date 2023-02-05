@@ -11,8 +11,6 @@ const PokemonDetail = function ({ selectedPokemon, handleExit }) {
     return typeLst.join(", ");
   }
 
-  console.log(selectedPokemon);
-
   if (selectedPokemon != null)
     return (
       <Modal closeHandler={handleExit}>

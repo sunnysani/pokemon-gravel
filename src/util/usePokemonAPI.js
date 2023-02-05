@@ -11,7 +11,5 @@ export async function getPaginationData(limit, offset) {
 export async function getDetailPokemonByUrl(url) {
   const getDetailResp = await axios.get(url);
 
-  console.log(getDetailResp);
-
   return getDetailResp.data;
 }

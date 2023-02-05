@@ -1,6 +1,8 @@
 import { useEffect, useState } from "react";
 import { useNavigate } from "react-router-dom";
 
+import Pokemon from "../../model/pokemon";
+
 import PokemonCard from "./PokemonCard";
 import classes from "./PokemonList.module.css";
 import PageSelector from "./PageSelector";
@@ -29,20 +31,19 @@ const PokemonList = function ({ page }) {
         let pokemonData = await getDetailPokemonByUrl(
           paginationData.results[i].url
         );
-        const newPokemon = {
-          id: pokemonData.id,
-          name: pokemonData.name,
-          imgUrl:
-            pokemonData.sprites.front_default ||
-            "https://lh3.googleusercontent.com/Vo3Lue3TWDEglIHr678A3IHmTbjN_dN8O8vhq0ZECyCAO3bbQyygPwCG4v_iyvDPmSI=w2400",
-          types: pokemonData.types,
-          weight: pokemonData.weight,
-          height: pokemonData.height,
-          abilities: pokemonData.abilities,
-          moves: pokemonData.moves,
-          stats: pokemonData.stats,
-        };
-        newItems.push(newPokemon);
+        newItems.push(
+          new Pokemon(
+            pokemonData.id,
+            pokemonData.name,
+            pokemonData.sprites.front_default,
+            pokemonData.types,
+            pokemonData.weight,
+            pokemonData.height,
+            pokemonData.abilities,
+            pokemonData.moves,
+            pokemonData.stats
+          )
+        );
       }
 
       setItems(newItems);

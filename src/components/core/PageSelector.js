@@ -19,7 +19,7 @@ const PageSelector = function ({ page, maxPage, setLimitHandler }) {
           onClick={() => navigate(`/pages/${i}`)}
           key={`page-${i}`}
         >
-          {i === page ? <b>{i}</b> : i}
+          {parseInt(i) === parseInt(page) ? <strong>{i}</strong> : i}
         </button>
       );
     }
